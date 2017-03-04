@@ -10,6 +10,7 @@ class Skill(models.Model):
     castrange = models.CharField(max_length=200)
     cost = models.CharField(max_length=200)
     duration = models.CharField(max_length=200)
+    path = models.CharField(max_length=200)
     version = models.IntegerField()
     
 

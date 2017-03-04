@@ -1,133 +1,153 @@
-import re, string, json;
+import json
 
 skills = []
 skill = {}
-skill['Path'] = 'Earth Prayers'
+skill['path'] = 'Earth Prayers'
 desc = False
 description = ''
 
 with open('Earth Prayers.txt', encoding='utf-8') as f:
     for line in f:
         if line == '~\n':
-        	skill['Path'] = 'Earth Prayers'
-        	skills.append(skill)
-        	skill = {}
+            skill['path'] = 'Earth Prayers'
+            skill['version'] = 3.5
+            res = {}
+            res['model'] = 'skilllist.skill'
+            res['pk'] = len(skills)
+            res['fields'] = skill
+            skills.append(res)
+            skill = {}
         elif line.count('"') == 2:
-        	desc = False
-        	description += line
-        	skill['Description'] = description.replace('"', '')
-        	description = ''
-        elif '"' in line and desc == False:
-        	desc = True
-        	description += line
-        elif '"' in line and desc == True:
-        	desc = False
-        	description += line
-        	skill['Description'] = description.replace('"', '')
-        	description = ''
-        elif desc == True:
-        	description += line
+            desc = False
+            description += line
+            skill['description'] = description.replace('"', '')
+            description = ''
+        elif '"' in line and desc is False:
+            desc = True
+            description += line
+        elif '"' in line and desc is True:
+            desc = False
+            description += line
+            skill['description'] = description.replace('"', '')
+            description = ''
+        elif desc is True:
+            description += line
         elif line == '\n':
-        	pass
-        else:
-        	word = line.rstrip('\n')
-        	w = word.split(':')
-        	skill[w[0]] = w[1]
-
-skill = {}
-skill['Path'] = 'Scythe Mastery'
-desc = False
-description = ''
-
-with open('Scythe Mastery.txt', encoding='utf-8') as f:
-    for line in f:
-        if line == '~\n':
-        	skill['Path'] = 'Scythe Mastery'
-        	skills.append(skill)
-        	skill = {}
-        elif line.count('"') == 2:
-        	desc = False
-        	description += line
-        	skill['Description'] = description.replace('"', '')
-        	description = ''
-        elif '"' in line and desc == False:
-        	desc = True
-        	description += line
-        elif '"' in line and desc == True:
-        	desc = False
-        	description += line
-        	skill['Description'] = description.replace('"', '')
-        	description = ''
-        elif desc == True:
-        	description += line
-        elif line == '\n':
-        	pass
+            pass
         else:
             word = line.rstrip('\n')
             w = word.split(':')
             skill[w[0]] = w[1]
 
 skill = {}
-skill['Path'] = 'Wind Prayers'
+skill['path'] = 'Scythe Mastery'
+desc = False
+description = ''
+
+with open('Scythe Mastery.txt', encoding='utf-8') as f:
+    for line in f:
+        if line == '~\n':
+            skill['path'] = 'Scythe Mastery'
+            skill['version'] = 3.5
+            res = {}
+            res['model'] = 'skilllist.skill'
+            res['pk'] = len(skills)
+            res['fields'] = skill
+            skills.append(res)
+            skill = {}
+        elif line.count('"') == 2:
+            desc = False
+            description += line
+            skill['description'] = description.replace('"', '')
+            description = ''
+        elif '"' in line and desc is False:
+            desc = True
+            description += line
+        elif '"' in line and desc is True:
+            desc = False
+            description += line
+            skill['description'] = description.replace('"', '')
+            description = ''
+        elif desc is True:
+            description += line
+        elif line == '\n':
+            pass
+        else:
+            word = line.rstrip('\n')
+            w = word.split(':')
+            skill[w[0]] = w[1]
+
+skill = {}
+skill['path'] = 'Wind Prayers'
 desc = False
 description = ''
 
 with open('Wind Prayers.txt', encoding='utf-8') as f:
     for line in f:
         if line == '~\n':
-            skill['Path'] = 'Wind Prayers'
-            skills.append(skill)
+            skill['path'] = 'Wind Prayers'
+            skill['version'] = 3.5
+            res = {}
+            res['model'] = 'skilllist.skill'
+            res['pk'] = len(skills)
+            res['fields'] = skill
+            skills.append(res)
             skill = {}
         elif line.count('"') == 2:
-        	desc = False
-        	description += line
-        	skill['Description'] = description.replace('"', '')
-        	description = ''
-        elif '"' in line and desc == False:
-        	desc = True
-        	description += line
-        elif '"' in line and desc == True:
-        	desc = False
-        	description += line
-        	skill['Description'] = description.replace('"', '')
-        	description = ''
-        elif desc == True:
-        	description += line
+            desc = False
+            description += line
+            skill['description'] = description.replace('"', '')
+            description = ''
+        elif '"' in line and desc is False:
+            desc = True
+            description += line
+        elif '"' in line and desc is True:
+            desc = False
+            description += line
+            skill['description'] = description.replace('"', '')
+            description = ''
+        elif desc is True:
+            description += line
         elif line == '\n':
-        	pass
+            pass
         else:
-        	word = line.rstrip('\n')
-        	w = word.split(':')
-        	skill[w[0]] = w[1]
+            word = line.rstrip('\n')
+            w = word.split(':')
+            skill[w[0]] = w[1]
 
 skill = {}
-skill['Path'] = 'Unlinked Skills'
+skill['path'] = 'Unlinked Skills'
 desc = False
 description = ''
 
 with open('Unlinked Skills.txt', encoding='utf-8') as f:
     for line in f:
         if line == '~\n':
-            skill['Path'] = 'Unlinked Skills'
-            skills.append(skill)
+            skill['path'] = 'Unlinked Skills'
+            skill['version'] = 3.5
+            res = {}
+            res['model'] = 'skilllist.skill'
+            res['pk'] = len(skills)
+            res['fields'] = skill
+            skills.append(res)
             skill = {}
         elif line.count('"') == 2:
-        	desc = False
-        	description += line
-        	skill['Description'] = description.replace('"', '')
-        	description = ''
-        elif '"' in line and desc == False:
-        	desc = True
-        	description += line
-        elif '"' in line and desc == True:
-        	desc = False
-        	description += line
-        	skill['Description'] = description.replace('"', '')
-        	description = ''
-        elif desc == True:
-        	description += line
+            desc = False
+            description += line
+            skill['description'] = description.replace('"', '')
+            description = ''
+        elif '"' in line and desc is False:
+            desc = True
+            description += line
+        elif '"' in line and desc is True:
+            desc = False
+            description += line
+            skill['description'] = description.replace('"', '')
+            description = ''
+        elif desc is True:
+            description += line
         elif line == '\n':
-        	pass
+            pass
         else:
             word = line.rstrip('\n')
             w = word.split(':')
