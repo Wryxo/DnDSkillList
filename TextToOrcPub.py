@@ -39,6 +39,13 @@ with open('Earth Prayers.txt', encoding='utf-8') as f:
             w = word.split(':')
             skill[w[0]] = w[1]
 
+skill['path'] = 'Earth Prayers'
+skill['version'] = 3.5
+res = {}
+res['model'] = 'skilllist.skill'
+res['pk'] = len(skills)
+res['fields'] = skill
+skills.append(res)
 skill = {}
 skill['path'] = 'Scythe Mastery'
 desc = False
@@ -77,6 +84,13 @@ with open('Scythe Mastery.txt', encoding='utf-8') as f:
             w = word.split(':')
             skill[w[0]] = w[1]
 
+skill['path'] = 'Scythe Mastery'
+skill['version'] = 3.5
+res = {}
+res['model'] = 'skilllist.skill'
+res['pk'] = len(skills)
+res['fields'] = skill
+skills.append(res)
 skill = {}
 skill['path'] = 'Wind Prayers'
 desc = False
@@ -115,6 +129,13 @@ with open('Wind Prayers.txt', encoding='utf-8') as f:
             w = word.split(':')
             skill[w[0]] = w[1]
 
+skill['path'] = 'Wind Prayers'
+skill['version'] = 3.5
+res = {}
+res['model'] = 'skilllist.skill'
+res['pk'] = len(skills)
+res['fields'] = skill
+skills.append(res)
 skill = {}
 skill['path'] = 'Unlinked Skills'
 desc = False
@@ -153,4 +174,11 @@ with open('Unlinked Skills.txt', encoding='utf-8') as f:
             w = word.split(':')
             skill[w[0]] = w[1]
 
+skill['path'] = 'Unlinked Skills'
+skill['version'] = 3.5
+res = {}
+res['model'] = 'skilllist.skill'
+res['pk'] = len(skills)
+res['fields'] = skill
+skills.append(res)
 print(json.dumps(skills))
