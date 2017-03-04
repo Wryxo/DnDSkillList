@@ -1,0 +1,180 @@
+Name:Aura Slicer
+Prerequisite:--
+Activation Time:1 attack action
+Cost:4 adrenaline
+Duration:Instantaneous
+Range:Melee
+Recharge Time:None
+
+"The Dervish makes an attack that shears through armor like paper, but passes through living flesh without harm.
+
+Aura Slicer deals no damage, but inflicts cracked armor if it hits and the Dervish is under the effect of an [Enchantment] Skill.
+
+Aura Slicer is a supernatural effect."
+~
+Name:Chilling Victory
+Prerequisite:--
+Activation Time:1 attack action
+Cost:6 adrenaline
+Duration:Instantaneous
+Range:Melee
+Recharge Time:None
+
+"If it hits, Chilling Victory deals +1d4 damage per rank in the Path of Scythe Mastery. If Chilling Victory strikes a foe with fewer hitpoints than the Dervish, it deals an additional 1d4 cold damage for each rank in the Path of Scythe Mastery."
+~
+Name:Crippling Sweep
+Prerequisite:--
+Activation Time:1 attack action
+Cost:5 energy
+Duration:Instantaneous
+Range:Melee
+Recharge Time:2 rounds
+
+"If it hits, Crippling Sweep cripples the Dervish's foe for one round per rank in the Path of Scythe Mastery unless they succeed on a Fortitude save. If Crippling Sweep strikes a moving foe, it deals +1d4 damage per rank in the Path of Scythe Mastery, and there is no save to resist the crippling."
+~
+Name:Crippling Victory
+Prerequisite:--
+Activation Time:1 attack action
+Cost:5 adrenaline
+Duration:Instantaneous
+Range:Melee
+Recharge Time:None
+
+"If it hits, Crippling Victory cripples the Dervish's foe for one round per rank in the Path of Scythe Mastery unless they succeed on a Fortitude save. If Crippling Victory strikes a foe with less health than the Dervish, it deals +1d4 damage per rank in the Path of Scythe Mastery and there is no save to resist the crippling."
+~
+Name:Eremite's Attack
+Prerequisite:--
+Activation Time:1 attack action
+Cost:5 energy
+Duration:Instantaneous
+Range:Melee
+Recharge Time:1 round
+
+"If it hits, Eremite's Attack deals +1d2 damage per rank in the Path of Scythe Mastery. If the Dervish is under the effect of an [Enchantment] Skill, the last [Enchantment] Skill applied to her is lost, and Eremite's Attack deals +1d4 damage per rank instead."
+~
+Name:Farmer's Scythe
+Prerequisite:--
+Activation Time:1 attack action
+Cost:5 energy
+Duration:Instantaneous
+Range:Melee
+Recharge Time:3 rounds
+
+"If it hits, Farmer's Scythe deals +1d4 damage per rank in the Path of Scythe Mastery. If the attack hits more than one foe, Farmer's Scythe recharges instantly."
+~
+Name:Irresistible Sweep
+Prerequisite:--
+Activation Time:1 attack action
+Cost:4 adrenaline
+Duration:Instantaneous
+Range:Melee
+Recharge Time:1 round
+
+"If it hits, Irresistible Sweep deals +1d3 damage per rank in the Path of Scythe Mastery. If the Dervish is under the effect of an [Enchantment] Skill, the last [Enchantment] Skill applied to her is lost, and Irresistible Sweep ignores any miss chances from sources other than total concealment."
+~
+Name:Mystra's Assault
+Prerequisite:--
+Activation Time:1 immediate action
+Cost:5 energy
+Duration:Instantaneous
+Range:Melee
+Recharge Time:4 rounds
+
+"The Dervish sweeps her weapon out in a quick, distracting blow, dealing only half normal damage. However, if Mystra's Assault strikes a caster casting a spell, or a creature using an Extraordinary, Supernatural, or blade magic ability with an activation time of a standard action or longer, the spell or effect fails to activate and the action is wasted, but the spell or effect is not lost (as such, limited daily uses of supernatural abilities are not consumed, interrupted maneuevers are still readied, and so on.) If Mystra's Assault interrupts a spell or spell-like ability and the Dervish is under the effect of an [Enchantment] Skill, the interrupted ability may not be used for a number of rounds equal to half her rank in the Path of Scythe Mastery."
+~
+Name:Radiant Scythe
+Prerequisite:--
+Activation Time:1 attack action
+Cost:6 adrenaline
+Duration:Instantaneous
+Range:Melee
+Recharge Time:None
+
+"If it hits, Radiant Scythe deals bonus damage based on the amount of energy the Dervish has currently, as seen on the table below, and she gains one point of energy per two ranks in the Path of Scythe Mastery.
+
+Energy 		| Bonus damage
+0-10 		| 1/rank
+11-15		| 1d2/rank
+16-20 		| 1d3/rank
+21-25 		| 1d4/rank
+26-30 		| 1d6/rank"
+~
+Name:Reap Impurities
+Prerequisite:--
+Activation Time:1 attack action
+Cost:5 adrenaline
+Duration:Instantaneous
+Range:Melee
+Recharge Time:None
+
+"If it hits, Reap Impurities deals +1d3 damage per rank in the Path of Scythe Mastery, and her target is instantly cured of one random disease, poison, or negative condition currently affecting it. If one of these effects is removed, Reap Impurities deals an addtional 1d4 divine damage per rank in the Path of Scythe Mastery."
+~
+Name:Reaper's Sweep (Elite)
+Prerequisite:--
+Activation Time:1 attack action
+Cost:8 adrenaline
+Duration:Instantaneous
+Range:Melee
+Recharge Time:None
+
+"As part of this action, the Dervish loses the last [Enchantment] Skill applied to her. If it hits, Reaper's Sweep cripples the struck foes for one round per rank in the Path of Scythe Mastery. If an [Enchantment] Skill is lost and the target is suffering from cracked armor, Reaper's Sweep deals bonus damage equal to 20% of the struck creature's full normal hitpoints and knocks them prone."
+~
+Name:Rending Sweep
+Prerequisite:--
+Activation Time:1 attack action
+Cost:5 adrenaline
+Duration:Instantaneous
+Range:Melee
+Recharge Time:None
+
+"As part of this action, the Dervish loses the last [Enchantment] Skill applied to her. If it hits, Rending Sweep deals +1d4 damage per rank in the Path of Scythe Mastery. If an [Enchantment] Skill is lost, struck foes are subjected to the effect of a targeted greater dispel magic with the Dervish's class level in place of her caster level, but this effect may only remove a single beneficial spell on a given struck foe."
+~
+Name:Twin Moon Sweep
+Prerequisite:--
+Activation Time:1 attack action
+Cost:6 adrenaline
+Duration:Instantaneous
+Range:Melee
+Recharge Time:None
+
+"As part of this action, the Dervish loses the last [Enchantment] Skill applied to her. The Dervish makes a single attack with her weapon, dealing +1d4 damage per rank in the Path of Scythe Mastery. If an [Enchantment] Skill was lost, the Dervish attacks a second time, dealing normal damage, ignoring miss chances from any source other than total concealment, and healing her for 1d4 hitpoints per rank in the Path of Scythe Mastery if she hits at least one foe."
+~
+Name:Victorious Sweep
+Prerequisite:--
+Activation Time:1 attack action
+Cost:5 energy
+Duration:Instantaneous
+Range:Melee
+Recharge Time:2 rounds
+
+"The Dervish makes a normal attack with her weapon. For each foe it strikes that has fewer hitpoints than her, she is healed for 1d4 points of damage per rank in the Path of Scythe Mastery."
+~
+Name:Wearying Strike
+Prerequisite:--
+Activation Time:1 attack action
+Cost:4 adrenaline
+Duration:Instantaneous
+Range:Melee
+Recharge Time:None
+
+"As part of this action, the Dervish loses the last [Enchantment] Skill applied to her. If Wearying Strike hits, it deals +1d6 damage per rank in the Path of Scythe Mastery. If the Dervish did not have an [Enchantment] Skill active on her to be lost, she is fatigued for one minute."
+~
+Name:Wounding Strike (Elite)
+Prerequisite:--
+Activation Time:1 attack action
+Cost:5 energy
+Duration:Instantaneous
+Range:Melee
+Recharge Time:2 rounds
+
+"As part of this action, the Dervish loses the last [Enchantment] Skill applied to her. If Wounding Strike hits, it deals +1d4 damage per rank in the Path of Scythe Mastery and lacerates the struck foe for 1 round per rank if it fails a Fortitude save. If an [Enchantment] Skill is lost, the struck foe must succeed on a second Fortitude save or have the bonus damage dealt increased to 20% of its full normal hitpoints."
+~
+Name:Zealous Sweep
+Prerequisite:--
+Activation Time:1 attack action
+Cost:5 energy
+Duration:Instantaneous
+Range:Melee
+Recharge Time:3 rounds
+
+"If Zealous Sweep hits, it deals normal damage and the Dervish gains 3 energy and 1 additional strike of adrenaline for each foe struck."
