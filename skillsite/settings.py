@@ -25,7 +25,7 @@ SECRET_KEY = '37$_pu&$*hc+um+99=h7#!k44=e=juqjn8_(b0$!usk(xo-iwg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['wryxo.pythonanywhere.com']
 
 
 # Application definition
