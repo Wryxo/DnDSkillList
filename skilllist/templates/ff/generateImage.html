@@ -9,7 +9,7 @@
         
         {% for skill in skills %}
             <p style="display: none">{{ skill }}</p>
-            skills[skill]
+            {{ skills[skill] }}
         {% endfor %}
         <form action="" method="post">{% csrf_token %}
             Team 1 Meno:<br>
