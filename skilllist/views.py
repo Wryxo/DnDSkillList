@@ -15,4 +15,4 @@ def marjory(request):
     return render(request, 'skilllist/skill_list.html', {'skills': skills})
 
 def generateImage(request):
-    return render(request, 'ff/generateImage.html', {'skills': request.POST})
+    return render(request, 'ff/generateImage.html', request.POST.dict())
