@@ -37,7 +37,14 @@
                 ctx.drawImage(imageObj, 0, 0);
                 ctx.font = '48px serif';
                 ctx.fillStyle = 'white'
-                ctx.fillText('Hello world', 0, 40);
+                ctx.fillText({{ request.POST['team1'] }}, 10, 860);
+                ctx.fillText({{ request.POST['score1'] }}, 150, 860);
+                ctx.fillText({{ request.POST['hit1'] }}, 200, 860);
+                ctx.fillText({{ request.POST['error1'] }}, 250, 860);
+                ctx.fillText({{ request.POST['team2'] }}, 10, 910);
+                ctx.fillText({{ request.POST['score2'] }}, 150, 910);
+                ctx.fillText({{ request.POST['hit2'] }}, 200, 910);
+                ctx.fillText({{ request.POST['error2'] }}, 250, 910);
             };
             imageObj.src = 'http://www.fightingflies.sk/wp-content/uploads/photo-gallery/IMG_1437.JPG';
             }draw();
