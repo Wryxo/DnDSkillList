@@ -6,14 +6,14 @@
         <link rel="stylesheet" href="{% static 'css/skills.css' %}">
     </head>
     <body>
-        {{ team1 }}
-        {{ score1 }}
-        {{ hit1 }}
-        {{ error1 }}
-        {{ team2 }}
-        {{ score2 }}
-        {{ hit2 }}
-        {{ error2 }}
+        <p id='team1' style="display: none">{{ team1 }}</p>
+        <p id='score1' style="display: none">{{ score1 }}</p>
+        <p id='hit1' style="display: none">{{ hit1 }}</p>
+        <p id='error1' style="display: none">{{ error1 }}</p>
+        <p id='team2' style="display: none">{{ team2 }}</p>
+        <p id='score2' style="display: none">{{ score2 }}</p>
+        <p id='hit2' style="display: none">{{ hit2 }}</p>
+        <p id='error2' style="display: none">{{ error2 }}</p>
 
         <form action="" method="post">{% csrf_token %}
             Team 1 Meno:<br>
@@ -45,14 +45,14 @@
                 ctx.drawImage(imageObj, 0, 0);
                 ctx.font = '48px serif';
                 ctx.fillStyle = 'white'
-                ctx.fillText(, 10, 860);
-                ctx.fillText(, 150, 860);
-                ctx.fillText(, 200, 860);
-                ctx.fillText(, 250, 860);
-                ctx.fillText(, 10, 910);
-                ctx.fillText(, 150, 910);
-                ctx.fillText(, 200, 910);
-                ctx.fillText(, 250, 910);
+                ctx.fillText(document.getElementById("team1").value, 10, 860);
+                ctx.fillText(document.getElementById("score1").value, 150, 860);
+                ctx.fillText(document.getElementById("hit1").value, 200, 860);
+                ctx.fillText(document.getElementById("error1").value, 250, 860);
+                ctx.fillText(document.getElementById("team2").value, 10, 910);
+                ctx.fillText(document.getElementById("score2").value, 150, 910);
+                ctx.fillText(document.getElementById("hit2").value, 200, 910);
+                ctx.fillText(document.getElementById("error2").value, 250, 910);
             };
             imageObj.src = 'http://www.fightingflies.sk/wp-content/uploads/photo-gallery/IMG_1437.JPG';
             }draw();
