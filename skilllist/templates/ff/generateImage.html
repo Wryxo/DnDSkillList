@@ -45,14 +45,14 @@
                 ctx.drawImage(imageObj, 0, 0);
                 ctx.font = '48px serif';
                 ctx.fillStyle = 'white'
-                ctx.fillText(document.getElementById("team1").value, 10, 860);
-                ctx.fillText(document.getElementById("score1").value, 150, 860);
-                ctx.fillText(document.getElementById("hit1").value, 200, 860);
-                ctx.fillText(document.getElementById("error1").value, 250, 860);
-                ctx.fillText(document.getElementById("team2").value, 10, 910);
-                ctx.fillText(document.getElementById("score2").value, 150, 910);
-                ctx.fillText(document.getElementById("hit2").value, 200, 910);
-                ctx.fillText(document.getElementById("error2").value, 250, 910);
+                ctx.fillText(document.getElementById("team1").innerHTML, 10, 860);
+                ctx.fillText(document.getElementById("score1").innerHTML, 150, 860);
+                ctx.fillText(document.getElementById("hit1").innerHTML, 200, 860);
+                ctx.fillText(document.getElementById("error1").innerHTML, 250, 860);
+                ctx.fillText(document.getElementById("team2").innerHTML, 10, 910);
+                ctx.fillText(document.getElementById("score2").innerHTML, 150, 910);
+                ctx.fillText(document.getElementById("hit2").innerHTML, 200, 910);
+                ctx.fillText(document.getElementById("error2").innerHTML, 250, 910);
             };
             imageObj.src = 'http://www.fightingflies.sk/wp-content/uploads/photo-gallery/IMG_1437.JPG';
             }draw();
