@@ -6,8 +6,8 @@
         <link rel="stylesheet" href="{% static 'css/skills.css' %}">
     </head>
     <body>
-        {% for skill in data %}
-            <p>{{ skill }}</p>
+        {% for skill in skills %}
+            <p>{{ skill.name }}</p>
         {% endfor %}
 
         {{ request.POST }}

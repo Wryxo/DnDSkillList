@@ -13,3 +13,7 @@ def asheron(request):
 def marjory(request):
     skills = Skill.objects.filter(pk__in=[60, 26, 21, 15, 13, 12, 11, 5, 1]).order_by('name')
     return render(request, 'skilllist/skill_list.html', {'skills': skills})
+
+def generateImage(request):
+    skills = Skill.objects.all().order_by('name')
+    return render(request, 'ff/generateImage.html', {'skills': skills})
