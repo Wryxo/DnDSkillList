@@ -28,7 +28,7 @@
         </form>
         <canvas id="canvas" width="976" height="720"></canvas>
 
-        {% if request.POST %}
+        {% if request.method == "POST" %}
         <script>
             function draw() {
             var ctx = document.getElementById('canvas').getContext('2d');
