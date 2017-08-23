@@ -6,16 +6,25 @@
         <link rel="stylesheet" href="{% static 'css/skills.css' %}">
     </head>
     <body>
-        <form action="/ff/generatedImage.html">
-            <input type="text" name="team1">
-            <input type="text" name="score1">
-            <input type="text" name="hit1">
+        {{ data }}
+        <form action="/ff/generateImage.html" method="post">
+            Team 1 Meno:<br>
+            <input type="text" name="team1"><br>
+            Team 1 Skore:<br>
+            <input type="text" name="score1"><br>
+            Team 1 Hity:<br>
+            <input type="text" name="hit1"><br>
+            Team 1 Errory:<br>
             <input type="text" name="error1"><br>
-            <input type="text" name="team2">
-            <input type="text" name="score2">
-            <input type="text" name="hit2">
-            <input type="text" name="error2">
-            <input type="submit" value="Submit" method="post">
+            Team 2 Meno:<br>
+            <input type="text" name="team2"><br>
+            Team 2 Skore:<br>
+            <input type="text" name="score2"><br>
+            Team 2 Hity:<br>
+            <input type="text" name="hit2"><br>
+            Team 2 Errory:<br>
+            <input type="text" name="error2"><br>
+            <input type="submit" value="Submit" >
         </form>
         <canvas id="canvas" width="976" height="720"></canvas>
 
@@ -26,10 +35,11 @@
 
             imageObj.onload = function() {
                 ctx.drawImage(imageObj, 0, 0);
+                ctx.font = '48px serif';
+                ctx.fillStyle = 'white'
+                ctx.fillText('Hello world', 0, 40);
             };
             imageObj.src = 'http://www.fightingflies.sk/wp-content/uploads/photo-gallery/IMG_1437.JPG';
-            ctx.font = '48px serif';
-            ctx.fillText('Hello world', 10, 50);
             }draw();
         </script>
     </body>
