@@ -4,5 +4,5 @@ from django.shortcuts import render
 def generateImage(request):
     if request.method == 'GET':
         return render(request, 'ff/generateImage.html')
-    else request.method == 'POST':
+    if request.method == 'POST':
         return render(request, 'ff/generateImage.html', request.POST)
