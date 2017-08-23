@@ -15,5 +15,4 @@ def marjory(request):
     return render(request, 'skilllist/skill_list.html', {'skills': skills})
 
 def generateImage(request):
-    skills = Skill.objects.all().order_by('name')
-    return render(request, 'ff/generateImage.html', {'skills': skills})
+    return render(request, 'ff/generateImage.html', {'skills': request.POST})
