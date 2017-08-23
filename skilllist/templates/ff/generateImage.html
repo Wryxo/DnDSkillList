@@ -7,7 +7,7 @@
     </head>
     <body>
         <p>{{ data }}</p>
-        <p>{{ request.POST.get('team1') }}</p>
+        {{ request.POST.get("team1") }}
         <form action="" method="post">{% csrf_token %}
             Team 1 Meno:<br>
             <input type="text" name="team1"><br>
