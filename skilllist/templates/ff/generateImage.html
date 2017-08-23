@@ -28,6 +28,7 @@
         </form>
         <canvas id="canvas" width="976" height="720"></canvas>
 
+        {% if request.POST %}
         <script>
             function draw() {
             var ctx = document.getElementById('canvas').getContext('2d');
@@ -49,5 +50,6 @@
             imageObj.src = 'http://www.fightingflies.sk/wp-content/uploads/photo-gallery/IMG_1437.JPG';
             }draw();
         </script>
+        {% endif %}
     </body>
 </html>
