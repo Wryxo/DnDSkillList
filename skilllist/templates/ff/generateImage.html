@@ -7,7 +7,9 @@
     </head>
     <body>
         <p>{{ data }}</p>
+        {% if 'team1' in request.POST %}
         <p>{{ request.POST['team1'] }}</p>
+        {% endif %}
         <form action="" method="post">{% csrf_token %}
             Team 1 Meno:<br>
             <input type="text" name="team1"><br>
