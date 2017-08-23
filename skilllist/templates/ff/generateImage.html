@@ -8,7 +8,7 @@
     <body>
         <h1>{{ hura }}</h1>
         <h1>{{ data }}</h1>
-        <p>{{skills}}</p>
+        <p>{{ request.GET }}</p>
         <form action="">{% csrf_token %}
             Team 1 Meno:<br>
             <input type="text" name="team1"><br>
