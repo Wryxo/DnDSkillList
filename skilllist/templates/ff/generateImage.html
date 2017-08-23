@@ -6,8 +6,8 @@
         <link rel="stylesheet" href="{% static 'css/skills.css' %}">
     </head>
     <body>
-        {% for skill, v in skills %}
-            <p id={{ skill }} style="display: none" data-ff={{ v }}>v</p>
+        {% for k,v in skills.dict() %}
+            <p id={{ k }} style="display: none">{{ v }}</p>
         {% endfor %}
         <form action="" method="post">{% csrf_token %}
             Team 1 Meno:<br>
