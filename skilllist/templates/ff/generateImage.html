@@ -1,0 +1,36 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/skills.css' %}">
+    </head>
+    <body>
+        <form action="/ff/generatedImage.html">
+            <input type="text" name="team1">
+            <input type="text" name="score1">
+            <input type="text" name="hit1">
+            <input type="text" name="error1"><br>
+            <input type="text" name="team2">
+            <input type="text" name="score2">
+            <input type="text" name="hit2">
+            <input type="text" name="error2">
+            <input type="submit" value="Submit" method="post">
+        </form>
+        <canvas id="canvas" width="976" height="720"></canvas>
+
+        <script>
+            function draw() {
+            var ctx = document.getElementById('canvas').getContext('2d');
+            var imageObj = new Image();
+
+            imageObj.onload = function() {
+                ctx.drawImage(imageObj, 0, 0);
+            };
+            imageObj.src = 'http://www.fightingflies.sk/wp-content/uploads/photo-gallery/IMG_1437.JPG';
+            ctx.font = '48px serif';
+            ctx.fillText('Hello world', 10, 50);
+            }draw();
+        </script>
+    </body>
+</html>
