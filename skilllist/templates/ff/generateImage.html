@@ -35,17 +35,10 @@
             <input type="submit" value="Submit" >
         </form>
         <canvas id="canvas" width="976" height="720"></canvas>
+        <a id="download">Download as image</a>
 
         <script>
             function draw() {
-            console.log('a', document.getElementById("team1").innerHTML)
-            console.log('a', document.getElementById("score1").innerHTML)
-            console.log('a', document.getElementById("hit1").innerHTML)
-            console.log('a', document.getElementById("error1").innerHTML)
-            console.log('a', document.getElementById("team2").innerHTML)
-            console.log('a', document.getElementById("score2").innerHTML)
-            console.log('a', document.getElementById("hit2").innerHTML)
-            console.log('a', document.getElementById("error2").innerHTML)
             var ctx = document.getElementById('canvas').getContext('2d');
             var imageObj = new Image();
 
@@ -64,6 +57,19 @@
             };
             imageObj.src = 'http://www.fightingflies.sk/wp-content/uploads/photo-gallery/IMG_1437.JPG';
             }draw();
+
+            function downloadCanvas(link, canvasId, filename) {
+                link.href = document.getElementById(canvasId).toDataURL();
+                link.download = filename;
+            }
+
+            /** 
+            * The event handler for the link's onclick event. We give THIS as a
+            * parameter (=the link element), ID of the canvas and a filename.
+            */
+            document.getElementById('download').addEventListener('click', function() {
+                downloadCanvas(this, 'canvas', 'image.png');
+            }, false);
         </script>
     </body>
 </html>
