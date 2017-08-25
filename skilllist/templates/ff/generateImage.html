@@ -49,15 +49,25 @@
                 ctx.drawImage(imageObj, 0, 0);
                 ctx.font = '48px serif';
                 ctx.fillStyle = 'white'
+                ctx.strokeStyle = 'black'
                 ctx.fillText(document.getElementById("akcia").innerHTML, 340, 50);
+                ctx.strokeText(document.getElementById("akcia").innerHTML, 340, 50);
                 ctx.fillText(document.getElementById("team1").innerHTML, 40, 120);
+                ctx.strokeText(document.getElementById("team1").innerHTML, 40, 120);
                 ctx.fillText(document.getElementById("score1").innerHTML, 400, 120);
+                ctx.strokeText(document.getElementById("score1").innerHTML, 400, 120);
                 ctx.fillText(document.getElementById("hit1").innerHTML, 500, 120);
+                ctx.strokeText(document.getElementById("hit1").innerHTML, 500, 120);
                 ctx.fillText(document.getElementById("error1").innerHTML, 600, 120);
+                ctx.strokeText(document.getElementById("error1").innerHTML, 600, 120);
                 ctx.fillText(document.getElementById("team2").innerHTML, 40, 220);
+                ctx.strokeText(document.getElementById("team2").innerHTML, 40, 220);
                 ctx.fillText(document.getElementById("score2").innerHTML, 400, 220);
+                ctx.strokeText(document.getElementById("score2").innerHTML, 400, 220);
                 ctx.fillText(document.getElementById("hit2").innerHTML, 500, 220);
+                ctx.strokeText(document.getElementById("hit2").innerHTML, 500, 220);
                 ctx.fillText(document.getElementById("error2").innerHTML, 600, 220);
+                ctx.strokeText(document.getElementById("error2").innerHTML, 600, 220);
             };
             imageObj.src = '/static/image.png';
             }draw();
